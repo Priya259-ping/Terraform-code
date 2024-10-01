@@ -1,0 +1,16 @@
+sudo yum install -y yum-utils shadow-utils
+sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+sudo yum -y install terraform
+
+then  command
+mkdir terraform
+cd terraform
+vim main.tf
+write code in main.tf
+terrraform init
+terraform plan
+terraform apply -auto-approve
+cat terraform.tfstate -->  to see state file info
+ll --> to list the files
+cat terraform state list ---> to see list of files store in state file
+
